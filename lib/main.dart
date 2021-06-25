@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items: [
           //change the icon and label to match what each page should be
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '1'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: '2'),
+          BottomNavigationBarItem(icon: Icon(Icons.free_breakfast_outlined), label: '2'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '3'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '4'),
         ],
