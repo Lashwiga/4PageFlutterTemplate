@@ -11,7 +11,19 @@ class _Screen1State extends State<Screen1> {
     return Scaffold(
       //replace the body with the code for your page
       body: Center(
-        child: Text('Page 1'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Food App',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontFamily: 'Comic Sans MS',
+              ),
+            ),
+            Image.asset('assets/steak.png'),
+        ],
+      ),
       ),
     );
   }
