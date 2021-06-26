@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //change appbar title here, or remove the appbar entirely
-      home: MyHomePage(title: '4 Page Template'),
+      home: MyHomePage(title: 'Food App'),
     );
   }
 }
