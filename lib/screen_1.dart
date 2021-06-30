@@ -21,6 +21,10 @@ class _Screen1State extends State<Screen1> {
                 fontFamily: 'Comic Sans MS',
               ),
             ),
+            TextButton(
+                onPressed: () {print('tested');},
+                child: Text("test")
+            ),
             Image.asset('assets/steak.png'),
         ],
       ),
