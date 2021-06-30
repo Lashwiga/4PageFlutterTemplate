@@ -19,26 +19,20 @@ class _Screen4State extends State<Screen4> {
               child: Row(
                 children: [
                   // Message notis button
-                  Flexible(
-                    child: FractionallySizedBox(
-                      widthFactor: 1,
-                      child: TextButton(
-                          onPressed: () {print('msgnoti pressed');},
-                          child: Text('Message Notifications')),
-                    ),
+                  Expanded(
+                    child: TextButton(
+                        onPressed: () {print('msgnoti pressed');},
+                        child: Text('Message Notifications')),
                   ),
                   Container(
                     color: Colors.grey,
-                    width: 5.0,
+                    width: 2.0,
                   ),
                   // Assignment notis button
-                  Flexible(
-                    child: FractionallySizedBox(
-                      widthFactor: 1,
-                      child: TextButton(
-                          onPressed: () {print('asnmtnoti pressed');},
-                          child: Text('Assignment Notifications')),
-                    ),
+                  Expanded(
+                    child: TextButton(
+                        onPressed: () {print('asnmtnoti pressed');},
+                        child: Text('Assignment Notifications')),
                   )
                 ],
               ),
