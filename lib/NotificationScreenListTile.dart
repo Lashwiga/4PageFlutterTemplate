@@ -14,7 +14,9 @@ class NotificationScreenListTile extends StatelessWidget {
     title: Text(title,style: TextStyle(fontSize: 18),),
 
     children: [
-      Text(description,style: TextStyle(fontSize: 14),),
+      Align(
+        alignment: Alignment.topLeft,
+        child: Text(description, style: TextStyle(fontSize: 14),)),
     ],
 
     // onExpansionChanged: (value){
