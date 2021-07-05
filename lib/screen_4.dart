@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'NotificationScreenListTile.dart';
 
 class Screen4 extends StatefulWidget {
   @override
@@ -37,6 +38,26 @@ class _Screen4State extends State<Screen4> {
                 ],
               ),
             ),
+
+            Flexible(
+              child: ListView(
+                // TODO: basic listview, not memory efficient for long lists. May need ListView.builder()
+                padding: const EdgeInsets.all(20),
+                children: <Widget>[
+                  NotificationScreenListTile(
+                    title: "first item",
+                    description: "first item things lookit me go",
+                  ),
+                  NotificationScreenListTile(
+                    title: "second item",
+                    description: "second item things, we're different!",
+                  ),
+
+                ],
+
+              ),
+            ),
+
           ],
         )
       ),
