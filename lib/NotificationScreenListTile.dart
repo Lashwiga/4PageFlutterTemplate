@@ -9,7 +9,7 @@ class NotificationScreenListTile extends StatelessWidget {
   final String title;
   final String description;
 
-  // build an custom ExpansionTile
+  // build a custom ExpansionTile
   @override
   Widget build(BuildContext context) {
   return ExpansionTile(
