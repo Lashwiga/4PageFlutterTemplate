@@ -50,16 +50,22 @@ class _Screen4State extends State<Screen4> {
   }
 }
 
-// TODO: placeholder, replace with something that gets the actual info for notifications
+// Creates a list of data for notifications
+// in format [[title1, desc1], [title2, desc2], ...]
+// TODO: this is a placeholder, replace with something that gets the actual info for notifications
 List<List> getListElements() {
   var items = List<List>.generate(1000, (counter) => ["Notification $counter","description $counter"]);
   return items;
 }
 
 // builds memory efficient list
+// returns a built ListView
 Widget getListView() {
+  // create variable with list of data for notifications
+  // needs format [[title1, desc1], [title2, desc2], ...]
   var listItems = getListElements();
 
+  // build the thing
   var listView = ListView.builder(
     padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
     itemBuilder: (context,index) {
@@ -70,5 +76,6 @@ Widget getListView() {
     }
   );
 
+  // return built ListView when this function is called
   return listView;
 }
